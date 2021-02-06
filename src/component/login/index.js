@@ -1,6 +1,7 @@
 import React from "react";
 import { Formik } from "formik";
 import * as Yup from "yup";
+import { Link as RouterLink } from "react-router-dom";
 // import { Link, Redirect, useHistory, Router } from "react-router-dom";
 
 import {
@@ -87,7 +88,9 @@ const LoginView = () => {
                         "A-z,0-9,!@.."
                       ),
                   })}
-                  onSubmit={(fields) => {}}
+                  onSubmit={(fields) => {
+                    <RouterLink to="/"></RouterLink>;
+                  }}
                 >
                   {({
                     errors,
